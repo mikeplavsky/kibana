@@ -1,6 +1,6 @@
 FROM dockerfile/java:oracle-java7
 
-ENV KB_PKG_NAME kibana-4.0.0-BETA2
+ENV KB_PKG_NAME kibana-4.0.0-beta3
 
 RUN \
   cd / && \
