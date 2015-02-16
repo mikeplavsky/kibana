@@ -1,6 +1,6 @@
 FROM dockerfile/java:oracle-java7
 
-ENV KB_PKG_NAME kibana-4.0.0-beta3
+ENV KB_PKG_NAME kibana-4.0.0-rc1-linux-x64
 
 RUN \
   cd / && \
@@ -9,8 +9,8 @@ RUN \
   rm -f $KB_PKG_NAME.tar.gz && \
   mv /$KB_PKG_NAME /kibana
 
+EXPOSE 5601
 ADD kibana.yml /kibana/config/kibana.yml
 
-CMD ["/kibana/bin/kibana"]
+CMD "/kibana/bin/kibana"
 
-EXPOSE 5601
