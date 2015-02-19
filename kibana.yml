@@ -43,6 +43,8 @@ verify_ssl: true
 # ca: /path/to/your/CA.pem
 
 # SSL for outgoing requests from the Kibana Server (PEM formatted)
+# ssl_key_file: /path/to/your/server.key
+# ssl_cert_file: /path/to/your/server.crt
 ssl_key_file: /kibana/ssl/server.key
 ssl_cert_file: /kibana/ssl/server.crt
 
